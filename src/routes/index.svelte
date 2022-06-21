@@ -1,51 +1,80 @@
 <script context="module">
-  import { base } from '$app/paths';
+import { base } from '$app/paths';
 
-  export async function load({ fetch }) {
-    const posts = await fetch(`${base}/index.json`)
-        .then((r) => r.json());
-    return {
-      props: { posts }
-    }
-  }
+export async function load({ fetch }) {
+	const posts = await fetch(`${base}/index_json`)
+		.then((r) => r.json());
+	
+	return {
+		props: posts
+	}
+}
 </script>
-
 <script>
-  export let posts;
+	export let posts;
 </script>
 
 <svelte:head>
-  <title>Home</title>
+<title>Home</title>
 </svelte:head>
 
-<div>
-  <h1>SvelteKit Blog</h1>
-  <p class="info">{posts.length} posts.</p>
-  {#each posts as post}
-    <a href={`${base}/${post.slug}`}>
-      <h2 class="title">{post.metadata.title}</h2>
-      <p>{post.metadata.excerpt}</p>
-    </a>
-  {/each}
+<div class="wrapper">
+	<h1>Recent Posts</h1>
+	<p class="info">{posts.length} posts</p>
+	{#each posts as post}
+		<div class="post">
+			<a href={`${base}/posts/${post.category}/${post.slug}`}>
+				<h2 class="title">[{post.category}] {post.metadata.title}</h2>
+			</a>
+			<p class="date">{post.metadata.date}</p>
+			<p class="content">{post.metadata.excerpt}</p>
+		</div>
+	{/each}
 </div>
 
-<style lang="scss">
+<style>
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+	}
 
-  h1 {
-    margin-bottom: 0;
-  }
+	h1 {
+		font-size: 2em;
+		color: #38F;
+		background-color: #EEE;
+		padding: 0.2em;
+		padding-left: 0.4em;
+		border-radius: 0.2em;
+		margin-bottom: 0;
+	}
 
-  h2.title {
-    margin-top: 32px;
-    margin-bottom: 0;
+	.info {
+		align-self: end;
+	}
 
-    &:hover {
-      color: #40b3ff;
-    }
-  }
+	.post {
+		margin-top: 10px;
+	}
 
-  p {
-    color: #555;
-    margin: 0;
-  }
+	h2.title {
+		display: inline;
+		margin-bottom: 0;
+	}
+
+	h2.title:hover {
+		color: #40b3ff;
+	}
+
+	p {
+		color: #555;
+		margin: 0;
+	}
+
+	.date {
+		font-size: 0.8em;
+	}
+
+	.content {
+		font-size: 1em;
+	}
 </style>

@@ -1,7 +1,47 @@
+<script>
+	import IoMdPin from 'svelte-icons/io/IoMdPin.svelte'
+	import IoMdSchool from 'svelte-icons/io/IoMdSchool.svelte'
+	import IoIosMail from 'svelte-icons/io/IoIosMail.svelte'
+	import IoLogoGithub from 'svelte-icons/io/IoLogoGithub.svelte'
+</script>
+<style>
+	.wrapper { 
+		margin-top: 3em;
+	}
+
+	.info {
+		display: flex;
+		color: #000;
+		align-items: center;
+		margin-bottom: 0.3em;
+		font-size: 1em;
+		font-family: 'Overpass', sans-serif;
+	}
+
+	.info a {
+		color: #000;
+	}
+
+	.info a:hover {
+		text-decoration: underline;
+	}
+
+	.icon {
+		color: #FB5;
+		width: 24px;
+		height: 24px;
+		margin-right: 0.5em;
+	}
+</style>
+
 <svelte:head>
-  <title>About</title>
+  	<title>About</title>
 </svelte:head>
 
-<h1>About</h1>
-<p>Recently, SvelteKit is released in public beta. And we could finally see what Rich Harris called "<a href="https://www.youtube.com/watch?v=qSfdtmcZ4d0">Futuristic Web Development</a>" is made of. It's always better to learn with project, so I made this little blog with SvelteKit and deployed it on the Github Pages.</p>
-<p>The Github repo for this blog is <a href="https://github.com/svelteland/svelte-kit-blog-demo">svelte-kit-blog-demo</a>.</p>
+
+<div class="wrapper">
+	<div class="info"> <div class="icon"><IoMdPin/></div> Suwon, South Korea </div>
+	<div class="info"> <div class="icon"><IoMdSchool/></div> Kyung Hee Univ. </div>
+	<div class="info"> <div class="icon"><IoIosMail/></div> junhyuk0801@gmail.com </div>
+	<div class="info"> <div class="icon"><IoLogoGithub/></div> <a href="https://github.com/junhyuk0801" target="_blank">github.com/junhyuk0801</a> </div>
+</div>

@@ -1,5 +1,5 @@
 <!--Great Github Corner from https://tholman.com/github-corners-->
-<a href="https://github.com/svelteland/svelte-kit-blog-demo"
+<a href="https://github.com/junhyuk0801"
    class="github-corner"
    aria-label="View source on GitHub">
   <svg width="60" height="60" viewBox="0 0 250 250"
@@ -15,7 +15,6 @@
 .github-corner:hover .octo-arm {
   animation:octocat-wave 560ms ease-in-out
 }
-
 @keyframes octocat-wave{
   0%,100% {
     transform:rotate(0)
@@ -27,7 +26,6 @@
     transform:rotate(10deg)
   }
 }
-
 @media (max-width:500px){
   .github-corner:hover .octo-arm {
     animation:none
