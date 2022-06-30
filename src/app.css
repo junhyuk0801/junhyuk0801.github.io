@@ -1,87 +1,97 @@
 body {
-	margin: 0px;
+    margin: 0px;
 }
 
-h1, h2, h3, p, a, ul {
-	font-family: 'Overpass', sans-serif;
-	font-weight: 400;
+h1,
+h2,
+h3,
+p,
+a,
+ul {
+    font-family: "Overpass", sans-serif;
+    font-weight: 400;
 }
 
 a {
-	color: #ff3e00;
-	text-decoration: none;
+    color: #ff3e00;
+    text-decoration: none;
 }
 
 a:hover {
-	color: #40b3ff;
+    color: #40b3ff;
 }
 
 code {
-	font-family: 'Fira Mono', monospace !important;
-	font-size: 14px;
-	font-weight: 400;
-} 
+    font-family: "Fira Mono", monospace !important;
+    font-size: 14px;
+    font-weight: 400;
+}
 
 h1 {
-	font-size: 40px;
-	color: #676778;
+    font-size: 40px;
+    color: #676778;
 }
 
 h2 {
-	font-size: 26px;
-	color: #444;
+    font-size: 26px;
+    color: #444;
 }
 
 h3 {
-	font-size: 22px;
-	color: #222;
+    font-size: 22px;
+    color: #222;
 }
 
-p, ul {
-	font-size: 18px;
-	color: #444;
+p,
+ul {
+    font-size: 18px;
+    color: #444;
 }
 
 .info {
-	font-size: 14px;
-	margin-top: 0px;
+    font-size: 14px;
+    margin-top: 0px;
 }
 
 blockquote {
-	border: 1px solid #27a9e3;
-	margin-left: 0px;
-	margin-right: 0px;
-	padding-left: 20px;
-	padding-right: 20px;
-	border-left: 10px solid #27a9e3;
+    border: 1px solid #27a9e3;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: 10px solid #27a9e3;
 }
 
 hr {
-	border-top: 1px solid #bbb;
+    border-top: 1px solid #bbb;
 }
 
 details {
-	border: 1px solid #aaa;
-	border-radius: 4px;
-	padding: .5em .5em 0;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 0.5em 0.5em 0;
 }
 
 details[open] {
-    padding: .5em;
+    padding: 0.5em;
 }
 
 details[open] summary {
     border-bottom: 1px solid #aaa;
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
 }
 
 summary {
-	color: #777;
-	cursor: pointer;
-	padding: .5em;
-	margin: -.5em -.5em 0;
+    color: #777;
+    cursor: pointer;
+    padding: 0.5em;
+    margin: -0.5em -0.5em 0;
 }
 
 summary:hover {
-	color: #27a9e3;
+    color: #27a9e3;
+}
+
+.post img {
+    max-width: 800px;
 }

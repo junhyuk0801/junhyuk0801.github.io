@@ -4,7 +4,11 @@ date: 2022-06-28
 excerpt: 협업을 위한 Branching
 ---
 
-사진1
+<center>
+
+![PIC](https://raw.githubusercontent.com/junhyuk0801/junhyuk0801.github.io/post-pictures/pictures/%EB%A6%AC%ED%84%B4%2022-S%20%EC%8A%A4%ED%84%B0%EB%94%94/GIT1/1.png)
+
+</center>
 
 ## Branch란?
 
@@ -48,7 +52,11 @@ master는 레포지토리를 생성할 때부터 만들어지는 브랜치로, �
 
 <br>
 
-사진2(경로 옆에 branch 뜬 사진)
+<center>
+
+![PIC](https://raw.githubusercontent.com/junhyuk0801/junhyuk0801.github.io/post-pictures/pictures/%EB%A6%AC%ED%84%B4%2022-S%20%EC%8A%A4%ED%84%B0%EB%94%94/GIT1/2.PNG)
+
+</center>
 
 ```bash
 git branch your-branch-name
@@ -59,7 +67,11 @@ git switch your-branch-name
 
 성공적으로 브랜치가 전환되었다면, `git branch` 명령어를 입력해 봅시다. master 브랜치와 생성한 브랜치가 모두 출력되는 것을 확인할 수 있습니다.
 
-사진3(branch 출력된 사진)
+<center>
+
+![PIC](https://raw.githubusercontent.com/junhyuk0801/junhyuk0801.github.io/post-pictures/pictures/%EB%A6%AC%ED%84%B4%2022-S%20%EC%8A%A4%ED%84%B0%EB%94%94/GIT1/3.PNG)
+
+</center>
 
 <br>
 
@@ -179,7 +191,11 @@ ls
 
 브랜치를 이용하여 개발한 프로젝트를 깃허브에 푸시하고자 합니다. 먼저 Github에서 레포지토리를 생성한 뒤, 레포지토리 주소를 로컬 레포지토리에 추가해줍니다.
 
-사진4(깃허브 새로운 레포지토리)
+<center>
+
+![PIC](https://raw.githubusercontent.com/junhyuk0801/junhyuk0801.github.io/post-pictures/pictures/%EB%A6%AC%ED%84%B4%2022-S%20%EC%8A%A4%ED%84%B0%EB%94%94/GIT1/4.png)
+
+</center>
 
 ```bash
 git remote add origin https://github.com/your-account/rour-repo-name
@@ -199,7 +215,11 @@ git push -u origin master
 이 때 `git push -u origin master`에서 origin은, 앞서 `git remote add` 명령어를 통해 추가한 깃허브의 주소입니다.
 또한 `git push -u origin master`에서 master는 푸시할 원격 저장소의 브랜치명입니다. 해당 명령어를 실행한 이후, 깃허브에 master 브랜치가 생성된 것을 확인하실 수 있습니다.
 
-사진(master 브랜치 추가된 사진)
+<center>
+
+![PIC](https://raw.githubusercontent.com/junhyuk0801/junhyuk0801.github.io/post-pictures/pictures/%EB%A6%AC%ED%84%B4%2022-S%20%EC%8A%A4%ED%84%B0%EB%94%94/GIT1/5.png)
+
+</center>
 
 한번 -u 플래그를 통해 푸시한 이후에는, `git push`만 입력해도 이전에 설정한 브랜치로 푸시할 수 있습니다.
 
@@ -212,4 +232,10 @@ git switch your-branch-name
 git push -u your-branch-name
 ```
 
-사진(다른 브랜치 추가된 사진)
+<center>
+
+![PIC](https://raw.githubusercontent.com/junhyuk0801/junhyuk0801.github.io/post-pictures/pictures/%EB%A6%AC%ED%84%B4%2022-S%20%EC%8A%A4%ED%84%B0%EB%94%94/GIT1/6.PNG)
+
+</center>
+
+원격 레포지토리에 브랜치가 추가된 것을 확인할 수 있습니다.

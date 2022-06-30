@@ -34,7 +34,9 @@
 
 <p class="info"><a href="https://github.com/junhyuk0801">JHSeo</a> {date}</p>
 
+<div class="post">
 {@html post.content}
+</div>
 
 <svelte:component
 	this={Giscus}
