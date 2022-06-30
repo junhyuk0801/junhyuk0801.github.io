@@ -5,4 +5,4 @@ node_modules
 /build
 /docs
 /functions
-src/posts/*
+package-lock.json
